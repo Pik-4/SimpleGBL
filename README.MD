@@ -18,6 +18,10 @@ The program includes a dedicated fastboot option, which you can access by pressi
 
 The init_boot.img in the program is compressed using lzma and marked with a magic string before it begins. You can replace the relevant binary strings to ensure compatibility with your device. However, please note that including the magic string, you have a total of 2.5MB available.
 
+### Channel
+
+@SimpleGBL
+
 ### Reference
 
 [qualcomm_gbl_exploit_poc](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)
