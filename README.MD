@@ -26,6 +26,8 @@ The program includes a dedicated fastboot option, which you can access by pressi
 
 The init_boot.img in the program is compressed using lzma and marked with a magic string before it begins. You can replace the relevant binary strings to ensure compatibility with your device. However, please note that including the magic string, you have a total of 2.5MB available.
 
+The magic string for init_boot in EFI is INIT_BOOT_MAGIC="CANOE:INIT_BOOT:LZMA:v1!", which uses a total of 24 bytes. After deducting these 24 bytes, you have 2,621,416 bytes available to store the init_boot in LZMA format.
+
 ### Channel
 
 Telegram @SimpleGBL
